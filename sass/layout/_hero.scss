@@ -1,11 +1,114 @@
 .hero{
+    padding-bottom: 75px;
+}
+.hero__content{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     background-color: #F5F5F5;
 
 }
-.hero__container{
+.hero__content{
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-image: url('../img/hero/rectangle_1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 160px;
+        height: 115px;
+       
+}
+&::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-image: url('../img/hero/rectangle_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 190px;
+    height: 173px;
+   
+}
+}
+.hero__content-box{
+    padding-left: 194px;
+    margin: 0 auto;
     
+}
+.hero__items{
+    display: flex;
+    flex-direction: column;
+  
+    max-width: 440px;
+    
+}
+.hero__title{
+    font-weight: 400;
+        font-size: 64px;
+        line-height: 119%;
+    text-align: justify;
+        color:$hero-title-color;
+        margin-bottom: 5px;
+
+}
+.title-red{
+    color: $hero-title-red-color;
+
+}
+.hero__text{
+    font-weight: 400;
+    text-align: justify;
+        font-size: 24px;
+        line-height: 116%;
+        color: $hero-text-color;
+        margin-bottom: 25px;
+}
+.hero__text2{
+    font-family: 'Roboto';
+    text-align: justify;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 119%;
+        color: $hero-text-color2;
+        margin-bottom: 137px;
+
+}
+.hero__icon-rocket{
+    margin: 0 auto 17px auto;
+    width: 128px;
+    height: 128px;
+}
+
+.box {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: rotateBox 3s linear infinite;
+}
+        
+.hero__button{
+    box-sizing: border-box;
+    width: 240px;
+    background-color: $hero-button-color;
+    border: 1px solid #3B4877;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $hero-button-text;
+    padding: 13px;
+    white-space: nowrap;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: $hero-button-hover-color;
+        color: $hero-button-hover-text;
+    }
+
 }

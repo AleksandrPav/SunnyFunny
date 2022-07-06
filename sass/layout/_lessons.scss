@@ -37,11 +37,11 @@
 }
 
 .lessons__items{
-    width: calc(100% - 50px / 2);
+    width: calc(100% - 72px / 2);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
    &:hover .first__box, 
    &:hover .second__box, 
    &:hover .third__box, 
@@ -62,14 +62,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
+  
     &:nth-of-type(n+4) {
         margin-bottom: 0;
     }
-  &:nth-of-type(3n) {
-    margin-right: 0;
-  }   
 }
 .lessons__img{
     position: relative;
@@ -93,11 +90,19 @@
     background-color: $lessons-bgtext-color;
     color:$lessons-text-color;
 }
+.item-box{
+    &:before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+}
 
 .first__box{
     &:before{
-        content: '';
-        position: absolute;
+        
         width: 100px;
         height: 100px;
         left: -50px;
@@ -105,16 +110,12 @@
         background: #EC290F;
         border-radius: 30px;
         transform: rotate(-45deg);
-        z-index: -1;
+       
     }
-   
-
 }
-
 .second__box{
     &:before {
-            content: '';
-            position: absolute;
+            
             width: 150px;
             height: 150px;
             left: 100px;
@@ -122,15 +123,14 @@
             background: #EC290F;
             border-radius: 30px;
             transform: rotate(170deg);
-            z-index: -1;
+           
         }
 
 }
 
 .third__box{
     &:before {
-            content: '';
-            position: absolute;
+          
             width: 150px;
             height: 150px;
             left: 260px;
@@ -138,14 +138,13 @@
             background: #EC290F;
             border-radius: 30px;
             transform: rotate(-145deg);
-            z-index: -1;
+          
         }
 
 }
 .fourth__box{
     &:before {
-            content: '';
-            position: absolute;
+            
             width: 150px;
             height: 150px;
            bottom: -15px;
@@ -153,14 +152,13 @@
             background: #EC290F;
             border-radius: 30px;
             transform: rotate(-145deg);
-            z-index: -1;
+         
         }
 
 }
 .sixth__box{
     &:before {
-            content: '';
-            position: absolute;
+            
         width: 100px;
             height: 100px;
             bottom: -25px;
@@ -168,7 +166,7 @@
             background: #EC290F;
             border-radius: 30px;
             transform: rotate(165deg);
-            z-index: -1;
+           
         }
 
 }

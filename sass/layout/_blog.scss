@@ -1,0 +1,120 @@
+.blog{
+    padding-bottom: 100px;
+}
+
+.blog__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.blog__items{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.blog__item{
+    width: 320px;
+   
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border: 1px solid #E5E5E5;
+    padding: 10px; 
+}
+
+.blog__header-title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 118%;
+    text-align: center;
+    color: $blog-title-color;
+   
+  
+}
+.blog__header-link{
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 118%;
+    text-align: center;
+    color: $blog-title-color;
+    border: 1px solid #3B4877;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: $blog-btn-color;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover{
+        background-color: $hero-button-hover-color;
+        color:$hero-button-hover-text;
+        
+    }
+}
+
+.blog__img{
+    padding: 20px 90% 240px 10%;
+    width: 300px;
+    height: 300px;
+    margin: 0 0 10px 0;
+    background-image: url(../img/blog/image1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: visibility 0.3s ease-in-out;
+    &:hover .blog__img-link{
+        visibility: visible;
+    }
+
+}
+.blog__img-link{
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 20px;
+    line-height:150%;
+    text-align: center;
+    color: $text-color;
+    padding: 5px 18px;
+    background-color: $bg-color;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    &:hover{
+        background-color: $btn-hover-orangColor;
+        color:$btn-hover-textColor;
+    }
+}
+.blog__discription{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+   
+}
+.blog__discription-admin{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: $text-orangColor;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 10px;
+    &:hover{
+        color:$btn-hover-orangColor;
+    }
+}
+.blog__discription-title{
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    color: $text-color;
+
+}
+.blog__discription-readmore{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+     color:$text-orangColor;
+}

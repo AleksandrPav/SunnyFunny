@@ -13,7 +13,7 @@
 <body>
     <header>
         <section class="header">
-            <div class="header__container __container">
+            <div class="header__container">
                 <div class="header__logo">
                     <a href=""><img src="./img/logo.png" alt="logo"></a>   
                 </div>
@@ -23,7 +23,7 @@
                             <a href="./index.html" class="header__link current">Головна</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__link">Про нас</a>
+                            <a href="#aboutus" class="header__link">Про нас</a>
                         </li>
                         <li class="header__item">
                             <a href="" class="header__link">Блог</a>
@@ -41,7 +41,8 @@
                 </div>
             </div>
         </section>
-
+        </header>
+<main>
         <section class="hero">
             <div class="hero__content">
                 <div class="hero__content-box">
@@ -55,17 +56,13 @@
                         спрямовують дитину.</p>
                         <a href="" class="hero__button">Залишити контакти</a>
                     </div>
-               
                 </div>
-            <div class="hero__img">
-                <img src="./img/hero/1.png" alt="дівчинка">
-            </div>
             </div>
             
         </section>
         <section class="aboutus">
-            <div class="aboutus__container __container">
-                <h3 class="aboutus__title">Про <span class="title-red">нас !</span></h3>
+            <div class="aboutus__container">
+                <h3 class="aboutus__title" id="aboutus">Про <span class="title-red">нас !</span></h3>
                 <div class="aboutus__content">
                     <ul class="aboutus__items">
                         <li class="aboutus__item1">
@@ -89,28 +86,28 @@
 
         </section>
         <section class="lessons">
-            <div class="lessons__container __container">
+            <div class="lessons__container">
                 <h3 class="lessons__title">У нас ваші діти <span class="title-red">зможуть займатись:</span></h3>
               
                 <ul class="lessons__items">
                     <li class="lessons__item ">
                         
                         <div class="lessons__item-box">
-                        <div class="first__box"></div>
+                        <div class="first__box item-box"></div>
                         <h4 class="lessons__item-title">Логопед</h4>
                         <img src="./img/lessons/1.png" alt="Логопед" class="lessons__img">
                         </div>
                     </li>
                     <li class="lessons__item ">
                         <div class="lessons__item-box">
-                            <div class="second__box"></div>
+                            <div class="second__box item-box"></div>
                         <h4 class="lessons__item-title">Бойові мистецтва</h4>
                         <img src="./img/lessons/2.png" alt="Бойові мистецтва" class="lessons__img">
                         </div>
                     </li>
                     <li class="lessons__item">
                         <div class="lessons__item-box">
-                            <div class="third__box"></div>
+                            <div class="third__box item-box"></div>
                         <h4 class="lessons__item-title">Вокал</h4>
                         <img src="./img/lessons/3.png" alt="Вокал" class="lessons__img">
                         </div>
@@ -120,7 +117,7 @@
                             
                         <h4 class="lessons__item-title">Йога</h4>
                         <img src="./img/lessons/4.png" alt="Йога" class="lessons__img">
-                        <div class="fourth__box"></div>
+                        <div class="fourth__box item-box"></div>
                         </div>
                     </li>
                     <li class="lessons__item fifth__box">
@@ -133,7 +130,7 @@
                         <div class="lessons__item-box">
                         <h4 class="lessons__item-title">ART</h4>
                         <img src="./img/lessons/6.png" alt="ART" class="lessons__img">
-                        <div class="sixth__box"></div>
+                        <div class="sixth__box item-box"></div>
                         </div>
                         
                     </li>
@@ -141,13 +138,29 @@
             
             </div>
         </section>
+        <div class="signin">
+            <div class="signin__container __container">
+            <h3 class="signin__title">Запишіть вашу дитину <span class="title-red">вже зараз!</span></h3>
+            <button class="signin__btn">Тисність на кнопку</button>
+            </div>
+        </div>
 
+        <section class="blog">
+            <div class="blog__container">
+                <div class="blog__header">
+                    <h3 class="blog__header-title">Останні новини <span class="title-red">з блогу</span></h3>
+                    <a href="" class="blog__header-link">Дивитись більше</a>
+                </div>
+                <div class="blog__content">
+                    
+                   
+                </div>
+            </div>
+        </section>
 
-
-
-    </header>
-    <main></main>
-    <footer></footer>
+    </main>
+    <footer>
+    </footer>
     
 </body>
 </html>

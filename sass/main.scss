@@ -2,7 +2,7 @@
 @import "./components/colorsvar";
 @import "./components/wrapper";
 @import "./components/animation";
-
+@import "./components/mixin";
 
 @import "./base/reset";
 
@@ -15,3 +15,5 @@
 @import "./layout/hero";
 @import "./layout/aboutus";
 @import "./layout/lessons";
+@import "./layout/signin";
+@import "./layout/blog";

@@ -53,6 +53,7 @@ main {
 }
 section {
     padding: 0 calc(50% - 160px);
+    margin: 0 auto;
   
     @include tab{
         padding: 0 calc(50% - 384px);

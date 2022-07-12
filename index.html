@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 <body>
+    <div class="banner-bridge-center">
+    <a class="scroll-button button scroll-next"href="#top">
+        <svg class="banner__icon"><use href="./img/symbol-defs.svg#icon-arrow-up2"></use></svg>
+    </a>
+    </div>
     <header>
-        <section class="header">
+        <section class="header" id="top">
             <div class="header__container">
                 <div class="header__logo">
                     <a href=""><img src="./img/logo.png" alt="logo"></a>   
@@ -33,7 +38,7 @@
                             <a href="#gallery" class="header__link">Галерея</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__link">Контакти</a>
+                            <a href="#footer" class="header__link">Контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -236,7 +241,7 @@
     </main>
     <footer>
         <section class="footer">
-            <div class="footer__container">
+            <div class="footer__container" id="footer">
                 <div class="footer__logo">
                     <img src="./img/footer/logo_footer.png" class="footer__logo" alt="logo">
                     <p class="footer__logo-text footer__text">Sunny Funny – це сімейний клуб, який створений для того, щоб різнобарвити буденність Вам і Вашим діткам.</p>
@@ -303,10 +308,12 @@
                     <p class="footer__timework-text footer__text">Неділя : вихідний</p>
                 </div>
             </div>
-
+            
         </section>
 
-
+    <div class="footer__end">
+        <a class="copyrights" href="#">Copyrights 2022. All Rights Reserved.Pavlov</a>
+    </div>
 
     </footer>
 <script src="./js/index.js" type="module"></script>

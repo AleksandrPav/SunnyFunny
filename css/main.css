@@ -54,6 +54,109 @@
   }
 }
 
+/*banner*/
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.75;
+  }
+  50%,
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.75;
+  }
+  50%,
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.scroll-button {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  background-color: #FA8D50;
+  border-radius: 22.5px;
+  left: 98vw;
+  bottom: 2vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: -22.5px;
+  z-index: 45;
+  cursor: pointer;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  color: #FFFFFF;
+  -webkit-transition: rotate 0.5s ease-in-out;
+  transition: rotate 0.5s ease-in-out;
+}
+
+.scroll-button:hover {
+  color: #FFFFFF;
+}
+
+.scroll-button:hover .banner__icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.scroll-button::before, .scroll-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  border: #FA8D50 12px solid;
+  opacity: 0.3;
+  -webkit-animation: ripple 3.0s ease-out infinite;
+          animation: ripple 3.0s ease-out infinite;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.scroll-button:after {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+.scroll-button.scroll-button-floating {
+  position: fixed;
+  bottom: 100px;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+.scroll-button.scroll-button-floating.visible {
+  opacity: 1;
+}
+
+.banner__icon {
+  width: 100%;
+  height: 100%;
+  background-color: #FA8D50;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  fill: #3B4877;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -1143,5 +1246,21 @@ section {
 
 .footer__timework-text:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.footer__end {
+  background-color: #191E31;
+  padding: 30px 0 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.copyrights {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 118%;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */

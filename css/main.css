@@ -813,6 +813,7 @@ section {
 }
 
 .blog {
+  background-color: #F5F5F5;
   padding-bottom: 100px;
 }
 
@@ -982,10 +983,165 @@ section {
 
 .gallary__items-image {
   text-align: center;
+  width: 1096px;
+  height: 500px;
 }
 
-.gallary__items-image img {
-  max-width: 1096px;
-  max-height: 500px;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  background-image: url(../img/footer/bg_footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__container {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.footer__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 118%;
+  text-align: justify;
+  color: #858EAD;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__logo img {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer__logo-text {
+  max-width: 177px;
+  max-height: 115px;
+}
+
+.footer__contacts-title {
+  margin-bottom: 15px;
+}
+
+.footer__contacts-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer__contacts-text {
+  margin-left: 10px;
+}
+
+.footer__contacts-telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer__contacts-telephone-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.footer__contacts-telephone img {
+  margin-right: 10px;
+}
+
+.footer__gallery {
+  margin-bottom: 15px;
+}
+
+.footer__gallery-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 290px;
+}
+
+.footer__gallery-item {
+  text-align: start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80px;
+          flex: 1 1 80px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer__gallery-item:nth-child(-n+3) {
+  margin-bottom: 10px;
+}
+
+.footer__gallery-item a:hover {
+  opacity: 0.5;
+}
+
+.footer__timework-title {
+  margin-bottom: 15px;
+}
+
+.footer__timework-text:not(:last-child) {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */

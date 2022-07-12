@@ -21,16 +21,16 @@
                 <div class="header__nav">
                     <ul class="header__items">
                         <li class="header__item">
-                            <a href="./index.html" class="header__link current">Головна</a>
+                            <a href="./index.html" class="header__link">Головна</a>
                         </li>
                         <li class="header__item">
                             <a href="#aboutus" class="header__link">Про нас</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__link">Блог</a>
+                            <a href="#blog" class="header__link">Блог</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__link">Галерея</a>
+                            <a href="#gallery" class="header__link">Галерея</a>
                         </li>
                         <li class="header__item">
                             <a href="" class="header__link">Контакти</a>
@@ -146,7 +146,7 @@
             </div>
         </div>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="blog__container">
                 <div class="blog__header">
                     <h3 class="blog__header-title">Останні новини <span class="title-red">з блогу</span></h3>
@@ -195,7 +195,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="swiper">
                 <div class="gallary__items swiper-wrapper">
                     <div class="gallary__items-image swiper-slide">
@@ -235,6 +235,79 @@
 
     </main>
     <footer>
+        <section class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <img src="./img/footer/logo_footer.png" class="footer__logo" alt="logo">
+                    <p class="footer__logo-text footer__text">Sunny Funny – це сімейний клуб, який створений для того, щоб різнобарвити буденність Вам і Вашим діткам.</p>
+                </div>
+                <div class="footer__contacts">
+                    <h3 class="footer__contacts-title footer__title">Контаки</h3>
+                    <div class="footer__contacts-list">
+                        <div class="footer__contacts-location footer__options">
+                           <img src="./img/footer/location.png" alt="location">
+                           <p class="footer__contacts-text footer__text">Україна, м.Київ пров. Коломийський, 17/31А</p>
+                        </div>
+                        <div class="footer__contacts-telephone">
+                            <img src="./img/footer/telephone.png" alt="telephone">
+                            <div class="footer__contacts-telephone-link">
+                            <a href="tel:+38 073 169 25 13" class="footer__telephone-text footer__text">+38 073 169 25 13</a>
+                            <a href="tel:+38 067 42 44 323" class="footer__telephone-text footer__text">+38 067 42 44 323</a>
+                            <a href="tel:+38 066 612 09 93" class="footer__telephone-text footer__text">+38 066 612 09 93</a>
+                            </div>
+                        </div>
+                        <div class="footer__contacts-mail footer__options"> 
+                        <img src="./img/footer/mail.png" alt="location">
+                        <a class="footer__contacts-text footer__text" href="mailto:info@ukr.net">info@ukr.net</a>
+                        </div>
+                        </div>
+        
+                </div>
+                <div class="footer__gallery">
+                    <h3 class="footer__gallery footer__title">Галерея</h3>
+                    <ul class="footer__gallery-list">
+                        <li class="footer__gallery-item">
+                            <a href=""><img src="./img/footer/Rectangle 22.png" alt="child"></a>
+                            
+                        </li>
+                        <li class="footer__gallery-item">
+                            <a href=""><img src="./img/footer/Rectangle 23.png" alt="child"></a>
+                            
+                        </li>
+                        <li class="footer__gallery-item">
+                            <a href=""><img src="./img/footer/Rectangle 24.png" alt="child"></a>
+                            
+                        </li>
+                        <li class="footer__gallery-item">
+                            <a href=""><img src="./img/footer/Rectangle 25.png" alt="child"></a>
+                            
+                        </li>
+                        <li class="footer__gallery-item">
+                            <a href=""><img src="./img/footer/Rectangle 26.png" alt="child"></a>
+                            
+                        </li>
+                        <li class="footer__gallery-item">
+                            <a href=""><img src="./img/footer/Rectangle 27.png" alt="child"></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__timework">
+                    <h3 class="footer__timework-title footer__title">Години роботи</h3>
+                    <p class="footer__timework-text footer__text">Понеділок : 9.00 - 19.00</p>
+                    <p class="footer__timework-text footer__text">Вівторок : 9.00 - 19.00</p>
+                    <p class="footer__timework-text footer__text">Середа : 9.00 - 19.00</p>
+                    <p class="footer__timework-text footer__text">Четвер : 9.00 - 19.00</p>
+                    <p class="footer__timework-text footer__text">П'ятниця : 9.00 - 19.00</p>
+                    <p class="footer__timework-text footer__text">Субота : вихідний</p>
+                    <p class="footer__timework-text footer__text">Неділя : вихідний</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
     </footer>
 <script src="./js/index.js" type="module"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

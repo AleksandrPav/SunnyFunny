@@ -4,9 +4,13 @@
 
 .gallary__items-image{
     text-align: center;
+    width: 1096px;
+        height: 500px;
 
 }
-.gallary__items-image img{
-   max-width: 1096px;
-   max-height: 500px;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
 }

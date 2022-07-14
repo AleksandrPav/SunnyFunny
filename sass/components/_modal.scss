@@ -1,0 +1,15 @@
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.close{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaa;
+    text-decoration: none;
+    transition: color .2s;
+    cursor: pointer;
+}

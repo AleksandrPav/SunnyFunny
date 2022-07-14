@@ -92,12 +92,13 @@
     margin: 0 auto 17px auto;
     width: 128px;
     height: 128px;
+    fill: #EC290F;
 }
 
 .box {
     transform-origin: 50% 50%;
     transform-box: fill-box;
-    animation: rotateBox 3s linear infinite;
+    animation: rotateBox 20s linear infinite;
 }
         
 .hero__button{

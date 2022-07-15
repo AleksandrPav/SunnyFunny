@@ -60,7 +60,7 @@
                         Якщо у дитини в достатній мірі не розвинена когнітивна здатність засвоювати матеріал, це буде приносити їй одне
                         розчарування, що може призвести до прогалин у навчанні, тому наші виховетлі постійно підтримують, надихють та
                         спрямовують дитину.</p>
-                        <a href="" class="hero__button">Залишити контакти</a>
+                        <a href="#" class="hero__button" data-modal="open-modal">Залишити контакти</a>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
         <div class="signin">
             <div class="signin__container __container">
             <h3 class="signin__title">Запишіть вашу дитину <span class="title-red">вже зараз!</span></h3>
-            <button class="signin__btn">Тисність на кнопку</button>
+            <a href="#" class="signin__btn" data-modal="open-modal">Тисність на кнопку</a>
             </div>
         </div>
 
@@ -237,6 +237,8 @@
             </div>
 
         </section>
+        
+    
 
     </main>
     <footer>
@@ -316,23 +318,41 @@
     </div>
 
     </footer>
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- dialog body -->
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    Hello world!
+    <div class="modal__overlay">
+        <div class="modal__container modal">
+            <form id="contact" action="" method="post">
+                <div class="modal__close">
+                    <button type="button" class="button__close close-modal">
+                        <svg class="modal__close-icon" width="18" height="18">
+                            <use href="./img/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
                 </div>
-                <!-- dialog buttons -->
-                <div class="modal-footer"><button type="button" class="btn btn-primary">OK</button></div>
-            </div>
+                <h3 class="modal__container-title">Швидкий зв'язок</h3>
+                <h4 class="modal__container-title">Залиште ваші контакти для зв'язку</h4>
+                <fieldset>
+                    <input placeholder="Ваше ім'я" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Ваш Email адрес" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Ваш номер телефону" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Напишіть ваше повідомлення тут...." tabindex="4" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Надіслати</button>
+                </fieldset>
+            </form>
         </div>
     </div>
 
 
 
+
 <script src="./js/index.js" type="module"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

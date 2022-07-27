@@ -320,33 +320,31 @@
     </footer>
     <div class="modal__overlay">
         <div class="modal__container modal">
-            <form id="contact" action="" method="post">
-                <div class="modal__close">
-                    <button type="button" class="button__close close-modal">
-                        <svg class="modal__close-icon" width="18" height="18">
-                            <use href="./img/symbol-defs.svg#icon-close"></use>
-                        </svg>
-                    </button>
+            <form id="modal" class="modal__form" action="" method="post">
+                <button type="button" class="modal__close close-modal">
+                    <svg class="modal__close-icon"><use href="./img/symbol-defs.svg#icon-close"></use></svg>
+                </button>
+                <div class="modal__title">
+                    <h3 class="modal__title-text">Форма для зв'язку з нами</h3>
+                    <p class="modal__text">Вкажіть ваші дані нижче</p>
                 </div>
-                <h3 class="modal__container-title">Швидкий зв'язок</h3>
-                <h4 class="modal__container-title">Залиште ваші контакти для зв'язку</h4>
-
-                <fieldset>
-                   
-                    <input class="form__name _required" placeholder="Ваше ім'я" type="text" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                    <input class="form__email _required _email" placeholder="Ваш Email адрес" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input class="form__tel _required" placeholder="Ваш номер телефону" type="tel" tabindex="3" required>
-                </fieldset>
-                <fieldset>
-                    <textarea placeholder="Напишіть ваше повідомлення тут...." tabindex="4" required></textarea>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Надіслати</button>
-                </fieldset>
+                <div class="modal__input">
+                    <input class="modal__input-text" tabindex="1"
+ type="text" required name="name"  placeholder="Ваше ім'я">
+                </div>
+                <div class="modal__input">
+                    <input class="modal__input-text" tabindex="2"  type="tel"maxlength="13" required name="phone" placeholder="Ваш телефон +380">
+                </div>
+                <div class="modal__input">
+                    <input class="modal__input-text" tabindex="3"  type="email" required name="email" placeholder="Ваш email">
+                </div>
+                
+                <div class="modal__input">
+                    <textarea class="modal__input-text" maxlength="200"
+ tabindex="4"  name="message" id="" cols="20" rows="10" placeholder="Повідомлення"></textarea>
+                </div>
+                <div class="modal__input">
+                    <input class="modal__input-submit" tabindex="5" type="submit" value="Надіслати" form="#modal">
             </form>
         </div>
     </div>

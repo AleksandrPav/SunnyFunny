@@ -77,3 +77,17 @@ fieldset {
     padding: 0;
     width: 100%;
 }
+input:valid{
+    border-color: #00ff00;
+ 
+}
+input:invalid{
+    border-color: #ff0000;
+}
+input:focus{
+  background-color: #fce2d4;
+}
+textarea:focus{
+  background-color: #fce2d4;
+}
+

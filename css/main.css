@@ -257,7 +257,6 @@
 .modal__input-text {
   width: 400px;
   margin-bottom: 10px;
-  border: 1px solid #EC290F;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
@@ -272,7 +271,6 @@
 .modal__input-submit {
   width: 400px;
   margin-bottom: 10px;
-  border: 1px solid #EC290F;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
@@ -296,6 +294,11 @@
 
 .is-visually {
   display: block;
+}
+
+.form-req.error {
+  -webkit-box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
 *, *::before, *::after {
@@ -368,30 +371,6 @@ section {
 
 .is-visually {
   visibility: visible;
-}
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-input:valid {
-  border-color: #00ff00;
-}
-
-input:invalid {
-  border-color: #ff0000;
-}
-
-input:focus {
-  background-color: #fce2d4;
-}
-
-textarea:focus {
-  background-color: #fce2d4;
 }
 
 .header {
